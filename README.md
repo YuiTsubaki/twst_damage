@@ -26,3 +26,8 @@
 ライセンス<br>
 ---
 [MIT licence](https://github.com/YuiTsubaki/twst_damage/blob/main/LICENSE)
+
+参考
+---
+株式会社アンク, Cの絵本[楽しく学べる「絵本シリーズ」], 株式会社翔泳社, 2017年[p134,135].
+[ツイステッドワンダーランド攻略wiki(ツイステ)](https://kamigame.jp/%E3%83%84%E3%82%A4%E3%82%B9%E3%83%86/index.html)
