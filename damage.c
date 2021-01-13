@@ -1,5 +1,5 @@
 /*!
- * process.c
+ * damage.c
  *
  * Copyright (c) 2021  Yui Tsubaki
  *
