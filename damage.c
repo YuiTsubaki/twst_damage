@@ -1,6 +1,3 @@
-#include<stdio.h>
-#include<string.h>
-
 /*!
  * process.c
  *
@@ -9,6 +6,9 @@
  * Released under the MIT licence.
  * see https://opensource.org/licenses/MIT
  */
+
+#include<stdio.h>
+#include<string.h>
 
 typedef struct _DATA{
 	char name[40];	//キャラクター名
