@@ -1,10 +1,19 @@
 #include<stdio.h>
 #include<string.h>
 
+/*!
+ * process.c
+ *
+ * Copyright (c) 2021  Yui Tsubaki
+ *
+ * Released under the MIT licence.
+ * see https://opensource.org/licenses/MIT
+ */
+
 typedef struct _DATA{
-	char name[40];
-	int damage;
-	char type;
+	char name[40];	//キャラクター名
+	int damage;	//基準ダメージ値
+	char type;	//魔法属性
 } DATA;
 
 int dataregist(DATA *, int);
@@ -21,9 +30,12 @@ int main()
 		{"フロイド", 5885, 'K'}, {"カリム", 5670, 'M'},
 		{"ジャミル", 6133, 'H'}
 	};
-	int data_num = 13;
-	int mode = 0;
+	int data_num = 13;	//初期登録数
+	int mode = 0;	//モード
 
+/***************************************
+ モード選択
+****************************************/ 
 	printf("-------戦闘ダメージ計算ツール-------\n属性入力は火ならＨ、木ならＫ，水ならＭを入力してください\n");
 	while(1){
 		printf("キャラ情報の登録は1を、計算は2を、終了は0を入力してください:");
@@ -61,13 +73,13 @@ int dataregist(DATA *pname, int num)
  datacalc() ダメージを計算する
  [引数] pname--キャラリストへのポインタ
  	num--リストの要素数
- [戻り値] ダメージ数
+ [戻り値] ダメージ値
  ****************************************/
 float datacalc(DATA *pname, int num)
 {
 	char name[40];
-	float totaldamage = 0.0;
-	char ytype;
+	float totaldamage = 0.0;   //総ダメージ値
+	char ytype;	//敵属性
 	int i;
 	
 
